@@ -60,3 +60,9 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           files: ./clover.xml
+
+      - name: Temp artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: temp-artifacts
+          path: /tmp
