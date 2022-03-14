@@ -78,7 +78,7 @@ final class ImagickRenderingTest extends TestCase
             new ImagickImageBackEnd()
         );
         $writer1 = new Writer($renderer1);
-        $tempName1 = tempnam(sys_get_temp_dir(), 'test') . '.png';
+        $tempName1 = '/tmp/test1.png';
         $writer1->writeFile('rotation without eye color', $tempName1);
 
         //$this->assertMatchesFileSnapshot($tempName1);
@@ -97,7 +97,7 @@ final class ImagickRenderingTest extends TestCase
             new ImagickImageBackEnd()
         );
         $writer2 = new Writer($renderer2);
-        $tempName2 = tempnam(sys_get_temp_dir(), 'test') . '.png';
+        $tempName2 = '/tmp/test2.png';
         $writer2->writeFile('rotation with eye color', $tempName2);
 
         //$this->assertMatchesFileSnapshot($tempName2);
