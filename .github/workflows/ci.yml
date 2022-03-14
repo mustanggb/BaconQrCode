@@ -61,8 +61,14 @@ jobs:
         with:
           files: ./clover.xml
 
-      - name: Temp artifacts
+      - name: Test1 artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: temp-artifacts
-          path: /tmp
+          name: test1-artifacts
+          path: /tmp/test1.png
+
+      - name: Test2 artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: test2-artifacts
+          path: /tmp/test2.png
